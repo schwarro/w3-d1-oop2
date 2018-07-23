@@ -22,6 +22,7 @@ class Cart
     @cart.each do |item|
       total += (item.price)*(1 + item.tax)
     end
+    return total.round(2)
   end
 
 
@@ -33,6 +34,6 @@ apples = Item.new('apples', 0.99, 0.13)
 cart1 = Cart.new
 cart1.add(cereal)
 cart1.add(apples)
-p cart1
+puts cart1
 total2 = cart1.total
-p total2
+puts total2
