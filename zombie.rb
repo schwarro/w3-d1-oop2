@@ -84,7 +84,7 @@ end
 
 
 
-carl = Zombie.new(3, 3)
+Rob = Zombie.new(3, 3)
 Zombie.spawn
 puts Zombie.all
 puts "It's a new day"
